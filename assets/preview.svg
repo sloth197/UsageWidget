@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="390" viewBox="0 0 760 390">
+  <rect width="760" height="390" rx="22" fill="#24262d"/>
+  <rect x="140" y="55" width="480" height="280" rx="30" fill="#181a21"/>
+  <text x="168" y="93" fill="#9aa4b8" font-family="Segoe UI, Arial" font-size="15" font-weight="600">CODEX  USAGE</text>
+  <text x="168" y="135" fill="#e2e6ef" font-family="Segoe UI, Arial" font-size="15" font-weight="600">5시간</text>
+  <text x="526" y="135" text-anchor="end" fill="#7d8798" font-family="Segoe UI, Arial" font-size="13">56% 남음 · 10/19 20:13</text>
+  <rect x="168" y="150" width="424" height="11" rx="6" fill="#2d303b"/>
+  <rect x="168" y="150" width="187" height="11" rx="6" fill="#5c87ff"/>
+  <text x="168" y="203" fill="#e2e6ef" font-family="Segoe UI, Arial" font-size="15" font-weight="600">주간</text>
+  <text x="526" y="203" text-anchor="end" fill="#7d8798" font-family="Segoe UI, Arial" font-size="13">93% 남음 · 10/26 15:13</text>
+  <rect x="168" y="218" width="424" height="11" rx="6" fill="#2d303b"/>
+  <rect x="168" y="218" width="30" height="11" rx="6" fill="#5c87ff"/>
+  <text x="168" y="291" fill="#828c9e" font-family="Segoe UI, Arial" font-size="13">PLUS · 16:36 갱신</text>
+</svg>
