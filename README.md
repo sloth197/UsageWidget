@@ -5,42 +5,44 @@
 ![License](https://img.shields.io/badge/license-MIT-2ea44f?style=flat-square)
 [![Release](https://img.shields.io/github/v/release/sloth197/UsageWidget?style=flat-square)](https://github.com/sloth197/UsageWidget/releases)
 
+**English** · [한국어](README.ko.md)
+
 ## About
 
-Codex 사용량을 화면 한쪽에 조용히 띄워두는 Windows 위젯입니다.
+UsageWidget is a lightweight Windows desktop widget that keeps your Codex usage visible without interrupting your workflow.
 
-사용량 한도를 확인하면서도 작업 흐름을 방해하지 않도록, 투명도 조절·항상 위·드래그 이동·Jelly Card 인터랙션을 작은 카드 안에 담았습니다.
+It combines a compact always-on-top card with opacity control, free dragging, dynamic usage windows, and a Jelly Card interaction that makes the gauge bend with the surface.
 
-![UsageWidget 미리보기](assets/preview.svg)
+![UsageWidget preview](assets/preview.svg)
 
 ### Tags
 
-`windows` `wpf` `dotnet` `codex` `usage-monitor` `desktop-widget` `jelly-ui` `spring-animation` `always-on-top` `korean`
+`windows` `wpf` `dotnet` `codex` `usage-monitor` `desktop-widget` `jelly-ui` `spring-animation` `always-on-top`
 
-## 기능
+## Features
 
-- 5시간·주간 등 서버가 반환하는 사용량 한도만 동적으로 표시
-- Pro·Enterprise·Edu·크레딧·무제한 계정 대응
-- 1분마다 자동 갱신
-- 사용량 조회 자체는 AI 모델 요청을 보내지 않음
-- 투명도 슬라이더
-- 항상 위에 표시 및 자유로운 창 이동
-- 가장자리를 당기면 게이지까지 함께 휘는 Jelly Card 효과
-- `%` 전용 멀티 해상도 아이콘
+- Dynamically displays only the usage windows returned by the server
+- Supports plan-specific windows, credits, and unlimited accounts
+- Refreshes automatically every minute
+- Reads the usage snapshot without sending an AI model request
+- Adjustable opacity slider
+- Always-on-top window with free dragging
+- Jelly Card edge deformation that bends the usage gauge with the surface
+- Multi-resolution `%` application icon
 
-## 다운로드
+## Download
 
-최신 Windows x64 실행 파일은 [Releases](https://github.com/sloth197/UsageWidget/releases)에서 받을 수 있습니다.
+Download the latest Windows x64 build from [Releases](https://github.com/sloth197/UsageWidget/releases).
 
-현재 릴리즈: [UsageWidget v0.1.0](https://github.com/sloth197/UsageWidget/releases/tag/v0.1.0)
+Current release: [UsageWidget v0.1.0](https://github.com/sloth197/UsageWidget/releases/tag/v0.1.0)
 
-## 빌드
+## Build
 
-요구 사항:
+Requirements:
 
 - Windows 10/11 x64
 - .NET 10 SDK
-- Codex 데스크톱 앱 설치 및 로그인 (실행 시 사용량 조회에 필요)
+- Codex desktop app installed and signed in (required to read usage)
 
 ```powershell
 dotnet publish .\CodexUsageWidget\CodexUsageWidget.csproj `
@@ -50,14 +52,14 @@ dotnet publish .\CodexUsageWidget\CodexUsageWidget.csproj `
   -o .\publish
 ```
 
-실행 파일은 `publish\CodexUsageWidget.exe`에 생성됩니다.
+The executable is created at `publish\CodexUsageWidget.exe`.
 
-## 개인정보와 제한사항
+## Privacy and limitations
 
-이 프로젝트는 공식 OpenAI 제품이 아닌 커뮤니티 프로젝트입니다. 설치된 Codex의 로컬 app-server 인터페이스를 통해 현재 사용량 스냅샷만 읽습니다. Codex 업데이트로 내부 인터페이스가 변경되면 동작하지 않을 수 있습니다.
+This is an unofficial community project, not an official OpenAI product. It reads the current usage snapshot through the local app-server interface of the installed Codex desktop app. That internal interface may change when Codex updates.
 
-위젯은 비밀번호, API 키, 대화 내용 또는 계정 인증 정보를 읽거나 저장하지 않습니다. Codex가 설치되지 않았거나 로그인되지 않은 경우 사용량 대신 조회 실패를 표시합니다.
+The widget does not read or store passwords, API keys, conversation contents, or account credentials. If Codex is not installed or signed in, the widget shows a refresh failure instead of inventing usage values.
 
-## 라이선스
+## License
 
-MIT License. 자세한 내용은 [LICENSE](LICENSE)를 참고하세요.
+MIT License. See [LICENSE](LICENSE).
